@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShipReady Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117; /* GitHub Dark Style */
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #161b22;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #30363d;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .status-badge {
+            background-color: #238636;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        h1 { color: #58a6ff; }
+        .info { margin-top: 20px; font-family: monospace; color: #8b949e; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🚢 ShipReady OS</h1>
+        <p>Container built and delivered successfully!</p>
+        <span class="status-badge">CONTAINER: ONLINE</span>
+        
+        <div class="info">
+            <p id="timestamp"></p>
+            <p>Server: Nginx Alpine</p>
+        </div>
+    </div>
+
+    <script>
+        // JS touch to show the site is "live"
+        const timeElement = document.getElementById('timestamp');
+        setInterval(() => {
+            const now = new Date();
+            timeElement.innerText = "Local Time: " + now.toLocaleTimeString();
+        }, 1000);
+    </script>
+</body>
+</html>
