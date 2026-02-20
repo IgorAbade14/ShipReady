@@ -1,5 +1,7 @@
 # 🚢 ShipReady v1.0
 
+[![ShipReady CI 🚀](https://github.com/IgorAbade14/ShipReady/actions/workflows/main.yml/badge.svg)](https://github.com/IgorAbade14/ShipReady/actions/workflows/main.yml)
+
 ShipReady is a high-performance deployment pipeline for local environments. It automates the lifecycle of Docker containers, ensuring that your web application is built, cleaned, and validated with a single command.
 
 ## 🚀 Features
