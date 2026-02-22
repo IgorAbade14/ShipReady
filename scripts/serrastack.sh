@@ -11,11 +11,11 @@ NC='\033[0m' # Reset
 # Ensure the script runs from the correct directory
 cd "$(dirname "$0")"
 
-IMAGE_NAME="shipready-image"
-CONTAINER_NAME="shipready-web"
+IMAGE_NAME="serrastack-image"
+CONTAINER_NAME="serrastack-web"
 PORT="8082"
 
-echo -e "${BLUE}🚢 [INFO] Starting ShipReady: Optimizing your workflow...${NC}"
+echo -e "${BLUE}⛰️  [INFO] Starting SerraStack: Optimizing your workflow...${NC}"
 
 # 1. BUILD
 echo -e "${YELLOW}🛠️  [BUILD] Building Docker image...${NC}"

@@ -1,4 +1,4 @@
-name: ShipReady CI 🚀
+name: SerraStack CI 🚀
 
 on:
   push:
@@ -16,13 +16,13 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t shipready-test -f config/Dockerfile .
+          docker build -t serrastack-test -f config/Dockerfile .
 
       - name: Test Container (Smoke Test)
         run: |
-          docker run -d --name test-container -p 8082:80 shipready-test
+          docker run -d --name test-container -p 8082:80 serrastack-test
           sleep 5
-          if curl -s localhost:8082 | grep "ShipReady"; then
+          if curl -s localhost:8082 | grep "SerraStack"; then
             echo "✅ Healthcheck Passed!"
           else
             echo "❌ Healthcheck Failed!"
