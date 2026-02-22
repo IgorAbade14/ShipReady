@@ -1,4 +1,4 @@
-# 🚢 SerraStack v1.0
+# ⛰️ SerraStack v1.0
 
 SerraStack is a high-performance deployment pipeline for local environments. It automates the lifecycle of Docker containers, ensuring that your web application is built, cleaned, and validated with a single command.
 
